@@ -1,31 +1,46 @@
 /* footer social icons */
 
 ul.social-network {
-    list-style: none;
-    display: inline;
-  
-    padding: 0;
-  }
-  
-  ul.social-network li {
-    display: inline;
-    margin: 0;
-    padding: 5px;
-  }
-  
-  .faFacebook, .faLinkedin, .faInstagram{
-      color: white;
-  }
-  
-  .faFacebook:hover{
-    color: #3b5998;
-  }
-  
-  .faLinkedin:hover{
-  color: #0072b1;
-  }
-  
-  .faInstagram:hover{
-  color: #C13584;
-  }
-  
+  list-style: none;
+  display: inline;
+
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0;
+  padding: 5px;
+}
+
+.faFacebook, .faLinkedin, .faInstagram{
+    color: white;
+}
+
+.faFacebook:hover{
+  color: #3b5998;
+}
+
+.faLinkedin:hover{
+color: #0072b1;
+}
+
+.faInstagram:hover{
+color: #C13584;
+}
+
+h6{
+  color: white;
+}  
+
+p{
+  color:white;
+}
+.icone
+{
+  font-size: 50px;
+}
+.tamanho{
+  width:  30pt;
+  height: 30pt;
+}
