@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { BsModalService } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-alertas',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertasComponent implements OnInit {
 
-  constructor() { }
+  @Input() message: string
+  @Input() type = 'success'
+
+  constructor( public modal: BsModalService ) { }
 
   ngOnInit(): void {
   }
-
+  onClose()
+  {
+    this.modal.hide()
+  }
 }

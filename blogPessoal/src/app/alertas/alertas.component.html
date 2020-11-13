@@ -1,6 +1,6 @@
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Oloco, meu!</strong> Olha esse alerta animado, como é chique!
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<div class="alert alert-{{type}} m-0 alert-dismissible fade show" role="alert">
+{{message}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)='onClose()'>
       <span aria-hidden="true">&times;</span>
     </button>
   </div>

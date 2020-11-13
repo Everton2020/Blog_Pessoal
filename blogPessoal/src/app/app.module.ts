@@ -19,6 +19,7 @@ import { PutTemaComponent } from './put-tema/put-tema.component';
 import { DeletePostagemComponent } from './delete-postagem/delete-postagem.component';
 import { DeleteTemaComponent } from './delete-tema/delete-tema.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { AlertasComponent } from './alertas/alertas.component';
     PutTemaComponent,
     DeletePostagemComponent,
     DeleteTemaComponent,
-    AlertasComponent
+    AlertasComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +44,8 @@ import { AlertasComponent } from './alertas/alertas.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    OrderModule
+    OrderModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

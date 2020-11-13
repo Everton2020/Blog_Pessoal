@@ -36,4 +36,8 @@ export class TemaService {
   {
     return this.http.delete(`http://localhost:8080/temas/id/${id}`, this.token)
   }
+  getByNomeTema(nome: string)
+  {
+    return this.http.get(`http://localhost:8080/tema/nome/${nome}`, this.token)
+  }
 }

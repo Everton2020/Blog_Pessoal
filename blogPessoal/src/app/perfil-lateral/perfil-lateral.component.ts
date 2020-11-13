@@ -12,7 +12,7 @@ export class PerfilLateralComponent implements OnInit {
   constructor() { }
 
   ngOnInit(){
-    //this.nome= 'Everton Souza Silva'
+   this.nome= 'Everton Souza Silva'
   }
 
 }
