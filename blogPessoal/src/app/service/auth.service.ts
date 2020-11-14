@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { faLessThanEqual } from '@fortawesome/free-solid-svg-icons';
+import { environment } from 'src/environments/environment.prod';
 import { UserLogin } from '../model/UserLogin';
 import { User } from "c:/Users/Generation Brazil/Documents/GitHub/Blog_Pessoal/blogPessoal/src/app/model/User";
 
@@ -24,9 +25,9 @@ btnSair()
 
 {
   let ok = false
-  let token = localStorage.getItem('token')
+  let token = environment.token
 
-  if(token != null)
+  if(token != "")
   {
     ok=true
   }
@@ -35,9 +36,9 @@ btnSair()
 btnLogin()
 {
   let ok = false
-  let token = localStorage.getItem('token')
+  let token = environment.token
 
-  if(token == null)
+  if(token == "")
   {
    return ok=true
   }
